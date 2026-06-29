@@ -1,0 +1,35 @@
+{
+  "id": "heritage-recipes-open-schema-001",
+  "title": "Define heritage Recipe schema (schema.org/Recipe extension + JSON Schema + SHACL)",
+  "project": "heritage-recipes-open",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["culture-heritage", "open-data", "food", "education"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "An open, consent-first dataset of traditional/regional recipes needs a shared schema before any recipe is captured. Every published recipe must carry a consent record, cultural attribution, source provenance, and an allergen field. Sources are direct consented contributions, public-domain, or openly-licensed only; scraping for-profit sites or copying in-copyright cookbook text/photos is out of scope. Restricted/sacred knowledge is recorded but never published. See PLAN.md.",
+  "objective": "Define the heritage Recipe record as a documented extension of schema.org/Recipe, published as JSON Schema + SHACL + a human-readable spec, with round-trippable Cooklang and Open Recipe Format mappings, and the countable consent/attribution/provenance/allergen units the CI gates measure.",
+  "acceptanceCriteria": [
+    "Recipe record defined as a schema.org/Recipe extension; published as JSON Schema + SHACL + human-readable spec.",
+    "Exactly one consent record, one attribution block, one provenance link, and one allergen field are required per published recipe (the countable CI units).",
+    "Ingredients/quantities modeled with metric + customary units and original names retained; structured steps; original-language title + translations.",
+    "Safety flags, TK-Label slots, and media with an independent license slot are modeled.",
+    "Regional/family variants modeled as co-equal linked records (no single 'authentic' winner).",
+    "Round-trip mappings to Cooklang and Open Recipe Format documented, with lossy fields noted.",
+    "A 'restricted' (recorded-but-never-published) status is representable in the schema."
+  ],
+  "resources": [
+    "planning/projects/heritage-recipes-open/PLAN.md",
+    "https://schema.org/Recipe",
+    "https://cooklang.org/",
+    "https://localcontexts.org/labels/traditional-knowledge-labels/"
+  ],
+  "output": "A schema specification document (schema/README.md) plus JSON Schema + SHACL artifacts defining the heritage Recipe record, its schema.org/Recipe mapping, and Cooklang/ORF export mappings, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
