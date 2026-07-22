@@ -90,7 +90,7 @@ is arguably the most important missing decision.
 
 **H. Minor/structural.** (1) `verifiedNeed: false` until a steward is secured is honest and correct.
 (2) The fidelity-audit sampling frame (≥50/release, stratified by community & method, independent
-auditor, back-to-source, safety/translation at 100%) is rigorous — a model other Elyos projects should
+auditor, back-to-source, safety/translation at 100%) is rigorous — a model other Hee-Lee Oss projects should
 copy. (3) Allergen-as-hard-gate (incl. explicit "unknown") is a thoughtful safety control. (4) Consider
 adding a **dietary/religious-restriction** metadata axis (halal/kosher/vegetarian/fasting traditions) —
 high reuse value and culturally salient, currently absent.

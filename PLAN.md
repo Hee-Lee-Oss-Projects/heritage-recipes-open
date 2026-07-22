@@ -163,7 +163,7 @@ published version represents what they shared. Safety-critical and translated re
 
 **Out of scope (explicit)**
 - **Any scraping, bulk copying, or re-publication of for-profit recipe sites or in-copyright cookbook
-  text/photos.** A hard refusal under Elyos guardrails, not a deprioritized item.
+  text/photos.** A hard refusal under Hee-Lee Oss guardrails, not a deprioritized item.
 - **Publishing any recipe without a recorded consent decision and cultural attribution.**
 - **Restricted/sacred knowledge** a community asks not to publish (recorded as restricted; never
   published).
@@ -211,7 +211,7 @@ A **data/content pipeline** project (with supporting tooling), not a hosted serv
    downstream-propagation notice.
 
 **Tech stack**
-- Tooling/validators/exporters: **TypeScript, ESM, pnpm** (Elyos conventions).
+- Tooling/validators/exporters: **TypeScript, ESM, pnpm** (Hee-Lee Oss conventions).
 - Recipe modeling: **schema.org/Recipe** core + heritage extension; serialized as **JSON-LD**; interop
   exports to **Cooklang** and **Open Recipe Format**; **CSV** for researchers.
 - Validation: **JSON Schema + SHACL** shapes + custom consent/attribution/provenance/allergen linters
@@ -339,7 +339,7 @@ used. **Photos are a frequent trap** and are licensed/verified independently of 
 with: **100% consent + attribution + provenance + allergen** coverage; ≥5 communities and ≥100 recipes
 with complete records; safety-critical and translated recipes reviewed at 100%; a **working
 right-to-withdraw** demonstrated end-to-end; passing CI gates; explorer + exports live; and **at least
-one community/cultural steward that has adopted/co-governs and cited** the dataset. Per Elyos,
+one community/cultural steward that has adopted/co-governs and cited** the dataset. Per Hee-Lee Oss,
 *delivered ≠ merged* — the corpus must be in beneficiaries' hands and communities must affirm fair
 representation.
 
@@ -394,7 +394,7 @@ in effect; (e) right-to-withdraw SLA demonstrably met in production. Depends on 
 ## Work breakdown
 
 The itemized, schema-mapped backlog lives in [`TASKS.md`](./TASKS.md), organized by the milestones
-above (M0–M3) plus a sized backlog. Each task maps to an Elyos Task JSON and carries a type, size,
+above (M0–M3) plus a sized backlog. Each task maps to a Hee-Lee Oss Task JSON and carries a type, size,
 risk tier, deliverable, dependencies, and reviewer. M0 deliberately front-loads consent, licensing,
 attribution, allergen, and safety guardrails **before any recipe is captured at scale.**
 
@@ -404,7 +404,7 @@ attribution, allergen, and safety guardrails **before any recipe is captured at 
 - **Consent & licensing reviewer:** TBD — must approve every contribution/source record; veto over any
   source; owns the right-to-withdraw process. **Naming a qualified person is a hard M0 exit
   criterion.** **Fallback if empty:** nothing advances past `pending`; no capture begins; maintainer
-  escalates to Elyos governance/board (and may engage pro-bono counsel) before any data work.
+  escalates to Hee-Lee Oss governance/board (and may engage pro-bono counsel) before any data work.
 - **Cultural-fidelity reviewers (rotation):** people with relevant cultural/domain knowledge — ideally
   **from or endorsed by each origin community** — performing attribution/fidelity review. TO BE SECURED
   per community.
@@ -416,7 +416,7 @@ attribution, allergen, and safety guardrails **before any recipe is captured at 
   **authority over their own data** (CARE) including withdrawal.
 - **Partner / requestor:** diaspora/heritage communities, educators, researchers (diffuse beneficiary
   class); a named representative steward is TO BE SECURED.
-- **Elyos governance/board:** arbiter for edge cases (e.g. a borderline source, an attribution dispute,
+- **Hee-Lee Oss governance/board:** arbiter for edge cases (e.g. a borderline source, an attribution dispute,
   a restricted-knowledge claim) under the published conflict-of-interest/veto checklist.
 
 ## Dependencies & integrations
@@ -428,7 +428,7 @@ attribution, allergen, and safety guardrails **before any recipe is captured at 
   *referenced*, not republished as our own guidance.
 - **Wikidata** (CC0) for ingredient/place reconciliation.
 - **SHACL / JSON-Schema tooling**, an RDF/JSON-LD library (TypeScript/ESM).
-- **Elyos pieces:** Task schema (`packages/schema`), CLI workspace/PR flow (`packages/cli`,
+- **Hee-Lee Oss pieces:** Task schema (`packages/schema`), CLI workspace/PR flow (`packages/cli`,
   `packages/core`), governance proposal/registry process. **Donated lane** — humans run their own
   agents; the CLI never runs headless or authenticates an agent.
 - **Steward host** (TO BE SECURED) for long-term hosting; persistent IDs stay project-owned regardless.
@@ -459,7 +459,7 @@ attribution, allergen, and safety guardrails **before any recipe is captured at 
   integrity* (unsafe or inaccurate recipes), addressed by the consent, licensing, fidelity, and
   food-safety gates above.
 - **Secrets handling:** no API keys needed for the public/contributed sources; any reconciliation
-  credentials stay out of logs, receipts, and commits per Elyos rules. The donated lane never runs
+  credentials stay out of logs, receipts, and commits per Hee-Lee Oss rules. The donated lane never runs
   headless or authenticates an agent. Consent artifacts containing PII are stored in a controlled,
   non-public location — **never committed to the repo or included in exports.**
 - **PII:** minimal contributor data, consent-bound; no minors; "anonymous by request" honored;
@@ -505,7 +505,7 @@ attribution, allergen, and safety guardrails **before any recipe is captured at 
 ## References
 
 - Project proposal: `governance/proposals/heritage-recipes-open.md` (TO BE CREATED)
-- Elyos work rules: `CLAUDE.md`
+- Hee-Lee Oss work rules: `CLAUDE.md`
 - Good Deed Definition & risk tiers: `docs/good-deed-definition.md`
 - Task JSON schema: `packages/schema/src/schemas.ts`
 - Portfolio roadmap: `planning/ROADMAP.md` (Track 5 — Culture & heritage)
@@ -577,7 +577,7 @@ throughout this PLAN and the companion TASKS.md** (not merely listed). Each note
 
 ## Review sign-off
 
-A completeness/correctness review was performed against the Elyos rules, the Good Deed Definition, the
+A completeness/correctness review was performed against the Hee-Lee Oss rules, the Good Deed Definition, the
 PLAN spec, and the task schema. Findings and resolutions:
 
 - **Measurable metrics:** every success metric has a baseline + target; the fidelity metric has a

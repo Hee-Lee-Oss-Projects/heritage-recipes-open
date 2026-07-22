@@ -5,9 +5,9 @@
 Itemized backlog for the open, consent-first heritage-recipe dataset. See [`PLAN.md`](./PLAN.md) for
 context, the consent/licensing gates, the safety/translation escalations, and the roadmap (M0–M3).
 
-## How these tasks map to Elyos
+## How these tasks map to Hee-Lee Oss
 
-Each task below becomes an Elyos **Task JSON** validated against `packages/schema/src/schemas.ts`.
+Each task below becomes a Hee-Lee Oss **Task JSON** validated against `packages/schema/src/schemas.ts`.
 Field mapping:
 
 - **id** — stable `heritage-recipes-open-<area>-NNN` (the table ID).
